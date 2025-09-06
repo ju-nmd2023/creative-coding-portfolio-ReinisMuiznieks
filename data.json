@@ -1,7 +1,17 @@
 [
   {
-    "file": "experiments/example.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "file": "experiments/gravel/gravel_initial.js",
+    "name": "Gravel - Order between order and disorder",
+    "description": "Resembles the original piece 'Gravel' by Nees, which shows the balance betwenen order and disorder in generative art."
+  },
+  {
+    "file": "experiments/gravel/gravel_order.js",
+    "name": "Order",
+    "description": "Part of a modern version of the Gravel piece. As the inital piece displays both order and discipline, I decided to split these into two. This first piece resembles the order side of generative art. Pieces move smoothly, non chaotically between the canvas."
+  },
+  {
+    "file": "experiments/gravel/gravel_disorder.js",
+    "name": "Disorder",
+    "description": "Part of a modern version of the Gravel piece. As the inital piece displays both order and discipline, I decided to split these into two. This second piece resembles the disorder side of generative art. Pieces are chaotically placed between the canvas, having no room to breathe, screaming."
   }
 ]
