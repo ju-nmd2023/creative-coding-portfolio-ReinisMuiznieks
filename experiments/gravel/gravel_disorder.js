@@ -1,6 +1,5 @@
 const squareSize = 40;
-const rows = floor(height / squareSize);
-const cols = floor(width / squareSize);
+let rows, cols;
 
 function setup() {
   createCanvas(innerWidth, innerHeight);
@@ -8,6 +7,9 @@ function setup() {
   textAlign(CENTER, CENTER);
   textSize(32);
   background(0);
+
+  rows = floor(height / squareSize);
+  cols = floor(width / squareSize);
 }
 
 function draw() {
