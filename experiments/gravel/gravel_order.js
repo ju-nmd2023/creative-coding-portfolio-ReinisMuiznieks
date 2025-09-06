@@ -1,6 +1,5 @@
 const squareSize = 40;
-const rows = floor(height / squareSize);
-const cols = floor(width / squareSize);
+let rows, cols;
 let time = 0;
 
 function setup() {
@@ -9,6 +8,9 @@ function setup() {
   background("black");
   colorMode(HSB, 360, 100, 100);
   frameRate(30);
+
+  rows = floor(height / squareSize);
+  cols = floor(width / squareSize);
 }
 
 function draw() {
