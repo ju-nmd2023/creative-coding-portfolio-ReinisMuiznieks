@@ -1,6 +1,6 @@
 [
   {
-    "file": "experiments/gravel/gravel_initial.js",
+    "file": "experiments/gravel_initial.js",
     "name": "Gravel - Order between order and disorder",
     "description": "Resembles the original piece 'Gravel' by Nees, which shows the balance betwenen order and disorder in generative art."
   },
