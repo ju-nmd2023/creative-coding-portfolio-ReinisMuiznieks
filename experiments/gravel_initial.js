@@ -1,12 +1,14 @@
 const squareSize = 40;
-const rows = floor(height / squareSize);
-const cols = floor(width / squareSize);
+let rows, cols;
 
 function setup() {
   createCanvas(innerWidth, innerHeight);
   noLoop();
   rectMode(CENTER);
   background(222, 222, 218);
+
+  rows = floor(height / squareSize);
+  cols = floor(width / squareSize);
 }
 
 function draw() {
