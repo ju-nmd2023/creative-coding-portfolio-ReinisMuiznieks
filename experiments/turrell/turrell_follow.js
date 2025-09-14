@@ -1,7 +1,4 @@
 const layers = 6;
-const lightColor = color(230, 190, 255, 200);
-const darkColor = color(180, 40, 230, 100);
-
 let centerX, startY, maxRadiusX, maxRadiusY;
 let followX, followY;
 
@@ -20,6 +17,8 @@ function setup() {
 
 function draw() {
   background(30, 10, 50);
+  const lightColor = color(230, 190, 255, 200);
+  const darkColor = color(180, 40, 230, 100);
 
   const targetX = constrain(mouseX - centerX, -120, 120);
   const targetY = constrain(mouseY - startY, -10, 110);
