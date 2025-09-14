@@ -13,5 +13,10 @@
     "file": "experiments/gravel/gravel_disorder.js",
     "name": "Disorder",
     "description": "Part of a modern version of the Gravel piece. As the inital piece displays both order and discipline, I decided to split these into two. This second piece resembles the disorder side of generative art. Pieces are chaotically placed between the canvas, having no room to breathe, screaming."
+  },
+  {
+    "file": "experiments/turrell/turrell_follow.js",
+    "name": "Turrell Halo",
+    "description": "Digital version of an light artwork by one of my favorite artists - James Turrell. Explores light and perception with layered ellipses."
   }
 ]
