@@ -26,7 +26,7 @@ function setup() {
 
 function draw() {
   time += 0.01;
-  background(0, 0.08);
+  background(0);
 
   updateFlowField();
   drawGridSquares();
