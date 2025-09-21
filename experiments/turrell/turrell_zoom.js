@@ -5,18 +5,18 @@ let initialWidth, initalHeight;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   noLoop();
+  frameRate(60);
   noStroke();
-  initialWidth = width * 0.24;
-  initialHeight = height * 0.12;
-  rectWidth = initialWidth;
-  rectHeight = initialHeight;
+
+  rectWidth = 140;
+  rectHeight = 70;
 }
 
 function mouseWheel(event) {
   rectWidth += event.delta;
   rectHeight += event.delta / 2;
-  rectWidth = constrain(rectWidth, initialWidth, width + height);
-  rectHeight = constrain(rectHeight, initialHeight, height + 10);
+  rectWidth = constrain(rectWidth, 140, width + height);
+  rectHeight = constrain(rectHeight, 70, height + 10);
   redraw();
 }
 
