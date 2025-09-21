@@ -13,5 +13,15 @@
     "file": "experiments/turrell/turrell_follow.js",
     "name": "Turrell Halo",
     "description": "Digital version of an light artwork by one of my favorite artists - James Turrell. Explores light and perception with layered ellipses."
+  },
+  {
+    "file": "experiments/turrell/turrell_zoom.js",
+    "name": "Turrell Zoom",
+    "description": "Digital version of an light artwork by James Turrell, featuring a scrollable zoom element, allowing the user to zoom into the 'light'."
+  },
+  {
+    "file": "experiments/gravel/gravel_boids.js",
+    "name": "Gravel boids",
+    "description": "Gravel art piece featuring flying boids that fly and light up the background square elements."
   }
 ]
