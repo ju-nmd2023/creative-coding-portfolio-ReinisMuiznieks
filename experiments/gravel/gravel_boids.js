@@ -87,7 +87,9 @@ function drawGridSquares() {
       push();
 
       fill(
-        isBoidNearSquare(x, y) ? color(0, 100, 70, 0.87) : color(0, 0, 0, 0.87)
+        isBoidNearSquare(x, y)
+          ? color(240, 100, 100, 0.87)
+          : color(0, 0, 0, 0.87)
       );
       rect(0, 0, squareSize, squareSize);
 
