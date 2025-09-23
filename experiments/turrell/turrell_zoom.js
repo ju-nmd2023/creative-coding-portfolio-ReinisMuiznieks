@@ -23,7 +23,6 @@ function draw() {
 
 function drawRadialGradientBackground() {
   const maxRadius = dist(0, 0, width / 2, height / 2);
-
   for (let r = maxRadius; r > 0; r--) {
     fill(
       lerpColor(
@@ -38,7 +37,7 @@ function drawRadialGradientBackground() {
 
 function drawRoundedRectGradient() {
   push();
-  translate(height / 2 - rectWidth / 2, width / 2 - rectHeight / 2);
+  translate(width / 2 - rectWidth / 2, height / 2 - rectHeight / 2);
   noStroke();
 
   const grad = drawingContext.createRadialGradient(
