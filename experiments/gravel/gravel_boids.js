@@ -3,8 +3,8 @@ const numBoids = 60;
 
 let rows, cols;
 let time = 0;
-let flowField = [];
-let boids = [];
+const flowField = [];
+const boids = [];
 
 function setup() {
   createCanvas(innerWidth, innerHeight);
@@ -63,20 +63,21 @@ function updateFlowField() {
 function drawGridSquares() {
   for (let row = 0; row < rows; row++) {
     for (let col = 0; col < cols; col++) {
-      let x = col * squareSize + squareSize / 2;
-      let y = row * squareSize + squareSize / 2;
+      const x = col * squareSize + squareSize / 2;
+      const y = row * squareSize + squareSize / 2;
 
-      let maxDistort = row * 1.4 + sin(time * 2 + row * 1.3) * 15;
-      let maxRotation = radians(row * 5) + sin(col + time) * 0.3;
+      const maxDistort = row * 1.4 + sin(time * 2 + row * 1.3) * 15;
+      const maxRotation = radians(row * 5) + sin(col + time) * 0.3;
 
-      let offsetX = map(
+      const offsetX = map(
         noise(col * 0.13, row * 0.13, time),
         0,
         1,
         -maxDistort,
         maxDistort
       );
-      let offsetY = map(
+
+      const offsetY = map(
         noise(row * 0.13, col * 0.14, time + 37),
         0,
         1,
@@ -129,11 +130,10 @@ class Boid {
   }
 
   followFlow(flowField, rows, cols, squareSize) {
-    let col = constrain(floor(this.pos.x / squareSize), 0, cols - 1);
-    let row = constrain(floor(this.pos.y / squareSize), 0, rows - 1);
-    let force = flowField[row][col];
-    let desired = p5.Vector.add(force, p5.Vector.mult(this.vel, 0.8));
-    this.vel.lerp(desired, 0.17);
+    const col = constrain(floor(this.pos.x / squareSize), 0, cols - 1);
+    const row = constrain(floor(this.pos.y / squareSize), 0, rows - 1);
+    const d = p5.Vector.add(flowField[row][col], p5.Vector.mult(this.vel, 0.8));
+    this.vel.lerp(d, 0.17);
   }
 
   update() {
