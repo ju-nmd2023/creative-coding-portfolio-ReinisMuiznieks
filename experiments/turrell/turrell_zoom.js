@@ -1,15 +1,11 @@
-let rectWidth;
-let rectHeight;
-let initialWidth, initalHeight;
+let rectWidth = 140;
+let rectHeight = 70;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   noLoop();
   frameRate(60);
   noStroke();
-
-  rectWidth = 140;
-  rectHeight = 70;
 }
 
 function mouseWheel(event) {
@@ -22,42 +18,41 @@ function mouseWheel(event) {
 
 function draw() {
   drawRadialGradientBackground();
-  drawRoundedRectGradient(width / 2, height / 2, rectWidth, rectHeight, 80);
+  drawRoundedRectGradient();
 }
 
 function drawRadialGradientBackground() {
-  let test = width / 2;
-  let cy = height / 2;
-  let maxRadius = dist(0, 0, test, cy);
+  const maxRadius = dist(0, 0, width / 2, height / 2);
+
   for (let r = maxRadius; r > 0; r--) {
-    let inter = map(r, 0, maxRadius, 1, 0);
-    let c = lerpColor(
-      color(162, 125, 2001, 255),
-      color(118, 24, 53, 255),
-      inter
+    fill(
+      lerpColor(
+        color(162, 125, 2001, 255),
+        color(118, 24, 53, 255),
+        map(r, 0, maxRadius, 1, 0)
+      )
     );
-    fill(c);
-    ellipse(test, cy, r * 3, r * 2.2);
+    ellipse(width / 2, height / 2, r * 3, r * 2.2);
   }
 }
 
-function drawRoundedRectGradient(x, y, w, h, radius) {
+function drawRoundedRectGradient() {
   push();
-  translate(x - w / 2, y - h / 2);
+  translate(height / 2 - rectWidth / 2, width / 2 - rectHeight / 2);
   noStroke();
 
-  let grad = drawingContext.createRadialGradient(
-    w / 2,
-    h / 2,
+  const grad = drawingContext.createRadialGradient(
+    rectWidth / 2,
+    rectHeight / 2,
     10,
-    w / 2,
-    h / 2,
-    max(w, h) / 1.2
+    rectWidth / 2,
+    rectHeight / 2,
+    max(rectWidth, rectHeight) / 1.2
   );
   grad.addColorStop(0, "rgba(113,15,209,255)");
   grad.addColorStop(1, "rgba(113,115,249,255) ");
 
   drawingContext.fillStyle = grad;
-  rect(0, 0, w, h, radius);
+  rect(0, 0, rectWidth, rectHeight, 80);
   pop();
 }
