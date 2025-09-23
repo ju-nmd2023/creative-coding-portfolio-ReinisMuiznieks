@@ -23,5 +23,10 @@
     "file": "experiments/gravel/gravel_boids.js",
     "name": "Gravel boids",
     "description": "Gravel art piece featuring flying boids that fly and light up the background square elements."
+  },
+  {
+    "file": "experiments/pattern/star_waves.js",
+    "name": "Star waves",
+    "description": "Artwork inspired by a visual pattern math and expression puzzles on tixy land."
   }
 ]
