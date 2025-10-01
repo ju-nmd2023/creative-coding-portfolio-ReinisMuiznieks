@@ -52,7 +52,7 @@ function draw() {
         )
       );
 
-      strokeWeight(0.2);
+      strokeWeight(0.05);
       stroke(0);
       rect(0, 0, squareSize, squareSize);
       pop();
