@@ -38,5 +38,10 @@
     "file": "experiments/sound/300bpm_sound.js",
     "name": "300BPM",
     "description": "Beat visualizer that visualizes my beat I made using ToneJS, uses high BPM and flashing lights to represent Techno electro dance music aesthetic."
+  },
+  {
+    "file": "experiments/flowfield/flow_field.js",
+    "name": "Flow field",
+    "description": "Vibrant static flow field with a mix of geometrical shapes and texture."
   }
 ]
