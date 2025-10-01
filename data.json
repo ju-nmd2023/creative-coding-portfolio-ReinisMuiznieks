@@ -12,21 +12,31 @@
   {
     "file": "experiments/turrell/turrell_follow.js",
     "name": "Turrell Halo",
-    "description": "Digital version of an light artwork by one of my favorite artists - James Turrell. Explores light and perception with layered ellipses."
+    "description": "Digital version of an light artwork by one of my favorite artists - James Turrell. Explores light and perception with layered ellipses. Moving the cursor around the page, makes the light follow it."
   },
   {
     "file": "experiments/turrell/turrell_zoom.js",
     "name": "Turrell Zoom",
-    "description": "Digital version of an light artwork by James Turrell, featuring a scrollable zoom element, allowing the user to zoom into the 'light'."
+    "description": "Digital version of an light artwork by James Turrell, featuring a scrollable zoom element, allowing the user to zoom into the 'light'. Scroll down to interact."
   },
   {
     "file": "experiments/gravel/gravel_boids.js",
     "name": "Gravel boids",
-    "description": "Gravel art piece featuring flying boids that fly and light up the background square elements."
+    "description": "Gravel art piece featuring flying boids that fly and light up the background square elements, lighting up the path."
   },
   {
     "file": "experiments/pattern/star_waves.js",
     "name": "Star waves",
     "description": "Artwork inspired by a visual pattern math and expression puzzles on tixy land."
+  },
+  {
+    "file": "experiments/sound/freq_visualizer.js",
+    "name": "Frequency visualizer",
+    "description": "Artwork visualizes frequency of a song '3' by 2hollis in a form of bars. It visualizes frequency rather than the rythm or beat directly - kind of like an audio equalizer."
+  },
+  {
+    "file": "experiments/sound/300bpm_sound.js",
+    "name": "300BPM",
+    "description": "Beat visualizer that visualizes my beat I made using ToneJS, uses high BPM and flashing lights to represent Techno electro dance music aesthetic."
   }
 ]
